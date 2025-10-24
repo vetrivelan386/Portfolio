@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetri Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c69fd57008.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Vetrivelan</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Vetrivelan S, a B.Tech student in AI and Data Science at Velammal Institute of Technology.
+                    I’m passionate about web development and love building responsive, user-friendly websites.
+                    I come from Tindivanam and constantly improve my skills through projects and learning.
+                    I aim to become a skilled Frontend Developer and contribute to the tech industry.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link onc" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI&UX</span><br>Designing web/App interfaces</li>
+                                <li><span>Web Development</span><br>Frontend Developement</li>
+                                <li><span>Languages Known</span><br>Python,Java(OOPS)</li>
+                                <li><span>Others</span><br>Mysql<br>Git,Github<br>MS Office</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievements">
+                            <ul>
+                                <li><span>1.</span>Won 1st Prize in Inter-College Project Competition</li>
+                                <li><span>2.</span>Our project was shortlisted in YUKTHI(National Innovation Council)amongIndia</li>   
+                                <li><span>3.</span>As part of the Social Media Team, successfully promoted our department's first symposium event, 
+                                                   achieving the highest number of participants compared to other departments.</li>                            
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2025</span><br>Velammal institute of technology,Chennai  B.Tech(AI&DS) Current CGPA: 8.43</li>
+                                <li><span>2020-2021</span><br>Montfort matric higher secondary school  (HSC) Biomathematic Marks = 474/600(79%)</li>
+                                <li><span>2018-2019</span><br>Subramania bharathi higher secondary school  (SSLC)  Marks = 370/500(74%)</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="hobbies">
+                            <ul>
+                                <li><span>1.</span>Video Gaming (Strategy)</li>
+                                <li><span>2.</span>Playing Football (Teamwork & Leadership)</li>
+                                <li><span>3.</span>Book Reading (Fiction & Non-Fiction)</li>
+                                <li><span>4.</span>Exploring Music ( Genres & Trends)</li>
+                            </ul>
+                        </div>                          
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developement</h2>
+                    <p>I build responsive, user-friendly interfaces using modern technologies like HTML, 
+                        CSS, JavaScript. My focus is on clean design, smooth performance, 
+                        and great user experience.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive and visually appealing layouts that enhance user engagement. 
+                        I focus on user-centered design principles to create experiences that are both 
+                        functional and attractive.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>From landing pages to full websites, I develop efficient, responsive web solutions 
+                        tailored to client needs. I combine design and code to bring ideas to life on the web.</p>
+                        <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------portfolio---------------->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>AI-SQL-Chatbot</h3>
+                    <p>Developed an interactive AI chatbot using Streamlit and LLaMA (via
+                       Ollama) to convert natural language questions into SQL queries.
+                       Connected with a live MySQL database, auto-generated queries using
+                       LangChain, and returned meaningful natural language answers. Integrated
+                       secure DB connection handling, schema parsing, and response synthesis.</p>
+                    <a href="https://github.com/vetrivelan386/AI-SQL-Chatbot"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                <h3>Weather App</h3>
+                    <p>Developed a Java-based Weather App with a user-friendly GUI using 
+                    Swing, fetching real-time weather data via the Open-Meteo API.
+                    Integrated JSON handling with the json-simple library to parse and
+                    dynamically display temperature, humidity, wind speed, and weather
+                    conditions.</p>
+                    <a href="https://github.com/vetrivelan386/Weather_App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                <h3>Pac-Man</h3>
+                    <p>A classic 2D Pac-Man game developed in Java with a graphical interface using
+                         the Swing framework. The game features animated characters, keyboard-based
+                          movement controls, and dynamic collision detection. Players navigate Pac-Man
+                           through a maze, collecting pellets while avoiding ghosts, replicating the 
+                           nostalgic arcade gameplay experience.</p>
+                    <a href="https://github.com/vetrivelan386/Pac-Man"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/vetrivelan386?tab=repositories" class="btn">See more</a>      
+    </div>
+ </div>
+
+ <!-------------------contact------------>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>vetrivelan386@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i></i>8072745073</p>
+                <div class="social-icons">
+                    <a href="https://github.com/vetrivelan386"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vetrivelan-s-874a3b24b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_.vetri_._leocri._/"><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vetrivelan Made with <i class="fa-solid fa-heart"></i> by me </p>
+    </div>
+ </div>
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbw6BrStTLA_L-BkKpHArdLtlXUwY9_hFDw4Wg4kKNWZHvviF_3fUIYE_AxJvBJrH5ih/exec'
+       const form = document.forms['submit-to-google-sheet']
+       const msg =document.getElementById("msg")
+
+       form.addEventListener('submit', e => {
+       e.preventDefault()
+       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+       })
+       .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
